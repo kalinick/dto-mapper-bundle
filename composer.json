@@ -1,5 +1,5 @@
 {
-  "name": "kalinick/dto-mapper-bundle",
+  "name": "vklymniuk/dto-mapper-bundle",
   "type": "library",
   "description": "Symfony mapper bundle, easy way to convert data.",
   "license": "MIT",
