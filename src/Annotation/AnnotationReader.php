@@ -35,7 +35,7 @@ class AnnotationReader implements AnnotationReaderInterface
     /**
      * {@inheritDoc}
      */
-    public function getClassAnnotation(\ReflectionClass $class, string $annotationName): ?object
+    public function getClassAnnotation(\ReflectionClass $class, string $annotationName)
     {
         return $this->reader->getClassAnnotation($class, $annotationName);
     }
@@ -51,7 +51,7 @@ class AnnotationReader implements AnnotationReaderInterface
     /**
      * {@inheritDoc}
      */
-    public function getMethodAnnotation(\ReflectionMethod $method, string $annotationName): ?object
+    public function getMethodAnnotation(\ReflectionMethod $method, string $annotationName)
     {
         return $this->reader->getMethodAnnotation($method, $annotationName);
     }
@@ -67,7 +67,7 @@ class AnnotationReader implements AnnotationReaderInterface
     /**
      * {@inheritDoc}
      */
-    public function getPropertyAnnotation(\ReflectionProperty $property, string $annotationName): ?object
+    public function getPropertyAnnotation(\ReflectionProperty $property, string $annotationName)
     {
         return $this->reader->getPropertyAnnotation($property, $annotationName);
     }

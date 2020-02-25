@@ -26,7 +26,7 @@ interface AnnotationReaderInterface
      *
      * @return object|null The Annotation or NULL, if the requested annotation does not exist.
      */
-    public function getClassAnnotation(\ReflectionClass $class, string $annotationName): ?object;
+    public function getClassAnnotation(\ReflectionClass $class, string $annotationName);
 
     /**
      * Gets the annotations applied to a method.
@@ -46,7 +46,7 @@ interface AnnotationReaderInterface
      *
      * @return object|null The Annotation or NULL, if the requested annotation does not exist.
      */
-    public function getMethodAnnotation(\ReflectionMethod $method, string $annotationName): ?object;
+    public function getMethodAnnotation(\ReflectionMethod $method, string $annotationName);
 
     /**
      * Gets the annotations applied to a property.
@@ -66,5 +66,5 @@ interface AnnotationReaderInterface
      *
      * @return object|null The Annotation or NULL, if the requested annotation does not exist.
      */
-    public function getPropertyAnnotation(\ReflectionProperty $property, string $annotationName): ?object;
+    public function getPropertyAnnotation(\ReflectionProperty $property, string $annotationName);
 }
